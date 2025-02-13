@@ -1,4 +1,5 @@
 #### DevOps Coding Challenge  #######
 
-Minikube
-Terraform
+1. Minikube
+
+2 .Terraform
