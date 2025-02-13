@@ -14,6 +14,19 @@
 
 ![image](https://github.com/user-attachments/assets/7ddd1212-fb67-4377-964d-7b96f759f16e)
 
+4. Instance Created in AWS
+
+![image](https://github.com/user-attachments/assets/5b8745ab-c6b4-4672-9ef9-78477abfe731)
+
+5. S3 Bucket
+
+![image](https://github.com/user-attachments/assets/0954fca4-35de-4c25-8dc1-0e61157449e2)
+
+6. DynamoDB
+
+![image](https://github.com/user-attachments/assets/d37e3f05-e680-4ed5-ac7f-0cca678daec8)
+
+
 
 
 
