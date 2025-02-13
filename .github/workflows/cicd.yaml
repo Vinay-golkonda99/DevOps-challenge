@@ -1,0 +1,51 @@
+name: Terraform AWS Provisioning
+
+on:
+  push:
+    branches:
+      - main  # Trigger on pushes to the main branch
+
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Checkout the code
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    # Step 2: Set up Terraform
+    - name: Set up Terraform
+      uses: hashicorp/setup-terraform@v1
+
+    # Step 3: Configure AWS credentials using GitHub Secrets
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws_region: us-west-2  # Change to your region
+
+    # Step 4: Change directory to the Terraform folder
+    - name: Change to Terraform directory
+      run: cd Terraform
+
+    # Step 5: Initialize Terraform
+    - name: Terraform Init
+      run: terraform init
+      working-directory: Terraform
+
+    # Step 6: Validate Terraform configuration
+    - name: Terraform Validate
+      run: terraform validate
+      working-directory: Terraform
+
+    # Step 7: Plan Terraform changes
+    - name: Terraform Plan
+      run: terraform plan
+      working-directory: Terraform
+
+    # Step 8: Apply Terraform changes
+    - name: Terraform Apply
+      run: terraform apply -auto-approve
+      working-directory: Terraform
