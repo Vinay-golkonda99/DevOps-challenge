@@ -10,7 +10,7 @@
 
 ![image](https://github.com/user-attachments/assets/666c2047-2747-455e-8c62-9e7ad75d8e4c)
 
-4. Terraform Apply
+3. Terraform Apply
 
 ![image](https://github.com/user-attachments/assets/7ddd1212-fb67-4377-964d-7b96f759f16e)
 
