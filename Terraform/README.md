@@ -14,6 +14,8 @@
 
 ![image](https://github.com/user-attachments/assets/7ddd1212-fb67-4377-964d-7b96f759f16e)
 
+The Outputs shown in the above picture provides the public IP and instance ID of ec2 server which i provisioned and matches with the below screenshot in aws console.
+
 4. Instance Created in AWS
 
 ![image](https://github.com/user-attachments/assets/5b8745ab-c6b4-4672-9ef9-78477abfe731)
